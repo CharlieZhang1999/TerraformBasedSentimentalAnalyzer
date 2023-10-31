@@ -1,0 +1,5 @@
+project_id = "amazing-autumn-398923"
+cluster_name = "cluster-2"
+region = "us-south1"
+zone = "us-south1-a"
+credentials_json = "./terraform.json"

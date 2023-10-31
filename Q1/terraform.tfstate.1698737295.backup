@@ -1,0 +1,603 @@
+{
+  "version": 4,
+  "terraform_version": "1.6.0",
+  "serial": 181,
+  "lineage": "8e41d437-1470-914a-c6f0-8c8e48d5b327",
+  "outputs": {
+    "cluster_location": {
+      "value": "us-south1",
+      "type": "string"
+    },
+    "cluster_name": {
+      "value": "cluster-2",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "google_container_cluster",
+      "name": "main_gke_cluster",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 2,
+          "attributes": {
+            "addons_config": [
+              {
+                "cloudrun_config": [],
+                "config_connector_config": [],
+                "dns_cache_config": [],
+                "gce_persistent_disk_csi_driver_config": [
+                  {
+                    "enabled": true
+                  }
+                ],
+                "gcp_filestore_csi_driver_config": [],
+                "gcs_fuse_csi_driver_config": [],
+                "gke_backup_agent_config": [],
+                "horizontal_pod_autoscaling": [],
+                "http_load_balancing": [],
+                "network_policy_config": [
+                  {
+                    "disabled": true
+                  }
+                ]
+              }
+            ],
+            "allow_net_admin": null,
+            "authenticator_groups_config": [],
+            "binary_authorization": [
+              {
+                "enabled": false,
+                "evaluation_mode": ""
+              }
+            ],
+            "cluster_autoscaling": [
+              {
+                "auto_provisioning_defaults": [],
+                "enabled": false,
+                "resource_limits": []
+              }
+            ],
+            "cluster_ipv4_cidr": "10.116.0.0/14",
+            "confidential_nodes": [],
+            "cost_management_config": [],
+            "database_encryption": [
+              {
+                "key_name": "",
+                "state": "DECRYPTED"
+              }
+            ],
+            "datapath_provider": "",
+            "default_max_pods_per_node": 110,
+            "default_snat_status": [
+              {
+                "disabled": false
+              }
+            ],
+            "deletion_protection": false,
+            "description": "",
+            "dns_config": [],
+            "enable_autopilot": false,
+            "enable_intranode_visibility": false,
+            "enable_k8s_beta_apis": [],
+            "enable_kubernetes_alpha": false,
+            "enable_l4_ilb_subsetting": false,
+            "enable_legacy_abac": false,
+            "enable_shielded_nodes": true,
+            "enable_tpu": false,
+            "endpoint": "34.174.220.70",
+            "gateway_api_config": [],
+            "id": "projects/amazing-autumn-398923/locations/us-south1/clusters/cluster-2",
+            "identity_service_config": [],
+            "initial_node_count": 1,
+            "ip_allocation_policy": [
+              {
+                "additional_pod_ranges_config": [],
+                "cluster_ipv4_cidr_block": "10.116.0.0/14",
+                "cluster_secondary_range_name": "gke-cluster-2-pods-e74ef490",
+                "pod_cidr_overprovision_config": [
+                  {
+                    "disabled": false
+                  }
+                ],
+                "services_ipv4_cidr_block": "10.120.0.0/20",
+                "services_secondary_range_name": "gke-cluster-2-services-e74ef490",
+                "stack_type": "IPV4"
+              }
+            ],
+            "label_fingerprint": "a9dc16a7",
+            "location": "us-south1",
+            "logging_config": [
+              {
+                "enable_components": [
+                  "SYSTEM_COMPONENTS",
+                  "WORKLOADS"
+                ]
+              }
+            ],
+            "logging_service": "logging.googleapis.com/kubernetes",
+            "maintenance_policy": [],
+            "master_auth": [
+              {
+                "client_certificate": "",
+                "client_certificate_config": [
+                  {
+                    "issue_client_certificate": false
+                  }
+                ],
+                "client_key": "",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQUtpcGZJQjRwZmNSYU5QQjMyT29hd3d3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa05tSTFOell6TkRBdE9HSmlOeTAwTTJZMExUZzFaakV0WWpFek5HUmtZMlF5WldWaApNQ0FYRFRJek1UQXpNVEEyTURZek1Gb1lEekl3TlRNeE1ESXpNRGN3TmpNd1dqQXZNUzB3S3dZRFZRUURFeVEyCllqVTNOak0wTUMwNFltSTNMVFF6WmpRdE9EVm1NUzFpTVRNMFpHUmpaREpsWldFd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FEQW5JU1VWZWZMcUE4UDN1cTJ0Z3JlcWJyTEZHeW9oYUs3OHpFbApWdGVQZnJJMTBaY2E5TldELzFmRkNlK1VYc2F4am1NcnN3NTloQkVxYnphYjRuYUpKaTF2R1lLZWpVbVNlNXNTClZDdkFXL3J0L0IzbXV0WGNLYmZsNnJmQ203TCtRQ2MzR2FrU3NaVUZvNTZjd3FaMlJuVUR4bU1LT0RFSUEvNFAKZ05pRTMyZ1d5bHpKdXJ3U3hzTXU0d2Zub1VQSGowYzNESjJCa0F4ZG5yWFZpY3J0VFhkRHFXa0NZNWcvNC8rMApiR3ZkS0xzZnUyUFpWRVkwQzRDNTNWanh2VnUwSGNEbWR6ekdOaCtwdU9SSERYdTBGS240NlMzc04ydHVkcW9rCmVOSDlmc1QrWEJwdVZtUmJjUTRhRWwvekFGcDdDd2FadEN5ckZiNU1iYUtlR0NLZUxrbFFWTE5vSUxMN29zZzgKZ2d3MGlGa2RCSnlrWTJsc0piYVdHNlNvYTB6bGd6K3hmdSsvM3VNUEFjbWtnbHVHTk1vZk1qQzc3bmp4RFlYYwpLV0dmWWl1NkUyTFlKMlBCVTZET0tsVEdCcWxPbUk4cGFYd1RlazdtNDJEY3BLNHZ1aGU0SzhMK0V2aEU0UzlFCnVTR2tQNnU1cXdaZ0k4WDhMbWorNjVPR3dmMENBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGQm1RbGNoY0FERVl5RmxWZFlpMXE2OTkyUnhFTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQmJYbWw3Ykg1N0NQV3dBRVRKMFQ1bUVyamhkN1JGT2g0VEwybml0UG1JCmVUOTlBQUt2RmRWREZzdFVRWG1QRWwxQUhEMmJaRWhKSkFSZU13bG1LS0EzWGtWQ1JRVzY1aFhiVm5kMXJEcVIKVThCNmx6bG1hU0VaQUUyTEduVCszdFZ2N3FiQVlIbjJjdTBqam9pTE1mNjJkRjBKNFpXVHEwQWFnOGNHNGJnYQpKbmtYYzJJWkZUZ3d3Q0Q1U2UzM3JHd3J0YVExeGEzbUxHUVdldndSWVN6NENlMmwwYTR0TnVmWkFEalBXbE5aCmlwNFZvYW9LVGV2SVR2Y1lFcjdabndCbXdxbjBqdzZPTnYrYWszTnJwT3VNT2Z3dXdlcGh5NExta3YxaHNYVmIKSGtKQ1hiazZHL1BjdTJmZFJWY2ZzcXdJWjhQdVJPNmZ0WWtSb2p5SnJRS1RoVmd4Q3UrOTFGRmlEQnJVS3RQVwo5TFRMTkpNaXY2c1FhWlViSHVQTjhadHc0QTNJVU5vU3RNRy96azc1VFdQamNFb05HMVdEU3ZiNzcvWFhlNVJVCldnNkhwQ2x3RDNaUmk4RWdXamQxdERybUVpRm1zcG5ySmlxME51TEFMRCtuU1Q4QVhxbndTT2cvQzI2bE5qdVoKMzBycXNXT09xTjlEaGMraXVpaFRQVFk9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K"
+              }
+            ],
+            "master_authorized_networks_config": [],
+            "master_version": "1.27.3-gke.100",
+            "mesh_certificates": [],
+            "min_master_version": null,
+            "monitoring_config": [
+              {
+                "advanced_datapath_observability_config": [
+                  {
+                    "enable_metrics": false,
+                    "relay_mode": "DISABLED"
+                  }
+                ],
+                "enable_components": [
+                  "SYSTEM_COMPONENTS"
+                ],
+                "managed_prometheus": [
+                  {
+                    "enabled": true
+                  }
+                ]
+              }
+            ],
+            "monitoring_service": "monitoring.googleapis.com/kubernetes",
+            "name": "cluster-2",
+            "network": "projects/amazing-autumn-398923/global/networks/default",
+            "network_policy": [
+              {
+                "enabled": false,
+                "provider": "PROVIDER_UNSPECIFIED"
+              }
+            ],
+            "networking_mode": "VPC_NATIVE",
+            "node_config": [
+              {
+                "advanced_machine_features": [],
+                "boot_disk_kms_key": "",
+                "confidential_nodes": [],
+                "disk_size_gb": 150,
+                "disk_type": "pd-balanced",
+                "effective_taints": [],
+                "ephemeral_storage_local_ssd_config": [],
+                "fast_socket": [],
+                "gcfs_config": [],
+                "guest_accelerator": [],
+                "gvnic": [],
+                "host_maintenance_policy": [],
+                "image_type": "COS_CONTAINERD",
+                "kubelet_config": [],
+                "labels": {},
+                "linux_node_config": [],
+                "local_nvme_ssd_block_config": [],
+                "local_ssd_count": 0,
+                "logging_variant": "DEFAULT",
+                "machine_type": "e2-standard-4",
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "min_cpu_platform": "",
+                "node_group": "",
+                "oauth_scopes": [
+                  "https://www.googleapis.com/auth/devstorage.read_only",
+                  "https://www.googleapis.com/auth/logging.write",
+                  "https://www.googleapis.com/auth/monitoring",
+                  "https://www.googleapis.com/auth/service.management.readonly",
+                  "https://www.googleapis.com/auth/servicecontrol",
+                  "https://www.googleapis.com/auth/trace.append"
+                ],
+                "preemptible": false,
+                "reservation_affinity": [],
+                "resource_labels": {},
+                "service_account": "default",
+                "shielded_instance_config": [
+                  {
+                    "enable_integrity_monitoring": true,
+                    "enable_secure_boot": false
+                  }
+                ],
+                "sole_tenant_config": [],
+                "spot": false,
+                "tags": [],
+                "taint": [],
+                "workload_metadata_config": [
+                  {
+                    "mode": "GKE_METADATA"
+                  }
+                ]
+              }
+            ],
+            "node_locations": [
+              "us-south1-a",
+              "us-south1-b",
+              "us-south1-c"
+            ],
+            "node_pool": [
+              {
+                "autoscaling": [],
+                "initial_node_count": 1,
+                "instance_group_urls": [
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-b/instanceGroupManagers/gke-cluster-2-main-node-pool-bca7dcbd-grp",
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-a/instanceGroupManagers/gke-cluster-2-main-node-pool-d0824590-grp",
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-c/instanceGroupManagers/gke-cluster-2-main-node-pool-8a3b25c4-grp"
+                ],
+                "managed_instance_group_urls": [
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-b/instanceGroups/gke-cluster-2-main-node-pool-bca7dcbd-grp",
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-a/instanceGroups/gke-cluster-2-main-node-pool-d0824590-grp",
+                  "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-c/instanceGroups/gke-cluster-2-main-node-pool-8a3b25c4-grp"
+                ],
+                "management": [
+                  {
+                    "auto_repair": true,
+                    "auto_upgrade": true
+                  }
+                ],
+                "max_pods_per_node": 110,
+                "name": "main-node-pool",
+                "name_prefix": "",
+                "network_config": [
+                  {
+                    "create_pod_range": false,
+                    "enable_private_nodes": false,
+                    "pod_cidr_overprovision_config": [],
+                    "pod_ipv4_cidr_block": "10.116.0.0/14",
+                    "pod_range": "gke-cluster-2-pods-e74ef490"
+                  }
+                ],
+                "node_config": [
+                  {
+                    "advanced_machine_features": [],
+                    "boot_disk_kms_key": "",
+                    "confidential_nodes": [],
+                    "disk_size_gb": 150,
+                    "disk_type": "pd-balanced",
+                    "effective_taints": [],
+                    "ephemeral_storage_local_ssd_config": [],
+                    "fast_socket": [],
+                    "gcfs_config": [],
+                    "guest_accelerator": [],
+                    "gvnic": [],
+                    "host_maintenance_policy": [],
+                    "image_type": "COS_CONTAINERD",
+                    "kubelet_config": [],
+                    "labels": {},
+                    "linux_node_config": [],
+                    "local_nvme_ssd_block_config": [],
+                    "local_ssd_count": 0,
+                    "logging_variant": "DEFAULT",
+                    "machine_type": "e2-standard-4",
+                    "metadata": {
+                      "disable-legacy-endpoints": "true"
+                    },
+                    "min_cpu_platform": "",
+                    "node_group": "",
+                    "oauth_scopes": [
+                      "https://www.googleapis.com/auth/devstorage.read_only",
+                      "https://www.googleapis.com/auth/logging.write",
+                      "https://www.googleapis.com/auth/monitoring",
+                      "https://www.googleapis.com/auth/service.management.readonly",
+                      "https://www.googleapis.com/auth/servicecontrol",
+                      "https://www.googleapis.com/auth/trace.append"
+                    ],
+                    "preemptible": false,
+                    "reservation_affinity": [],
+                    "resource_labels": {},
+                    "service_account": "default",
+                    "shielded_instance_config": [
+                      {
+                        "enable_integrity_monitoring": true,
+                        "enable_secure_boot": false
+                      }
+                    ],
+                    "sole_tenant_config": [],
+                    "spot": false,
+                    "tags": [],
+                    "taint": [],
+                    "workload_metadata_config": [
+                      {
+                        "mode": "GKE_METADATA"
+                      }
+                    ]
+                  }
+                ],
+                "node_count": 1,
+                "node_locations": [
+                  "us-south1-a",
+                  "us-south1-b",
+                  "us-south1-c"
+                ],
+                "placement_policy": [],
+                "upgrade_settings": [
+                  {
+                    "blue_green_settings": [],
+                    "max_surge": 1,
+                    "max_unavailable": 0,
+                    "strategy": "SURGE"
+                  }
+                ],
+                "version": "1.27.3-gke.100"
+              }
+            ],
+            "node_pool_auto_config": [],
+            "node_pool_defaults": [
+              {
+                "node_config_defaults": [
+                  {
+                    "logging_variant": "DEFAULT"
+                  }
+                ]
+              }
+            ],
+            "node_version": "1.27.3-gke.100",
+            "notification_config": [
+              {
+                "pubsub": [
+                  {
+                    "enabled": false,
+                    "filter": [],
+                    "topic": ""
+                  }
+                ]
+              }
+            ],
+            "operation": null,
+            "private_cluster_config": [
+              {
+                "enable_private_endpoint": false,
+                "enable_private_nodes": false,
+                "master_global_access_config": [
+                  {
+                    "enabled": false
+                  }
+                ],
+                "master_ipv4_cidr_block": "",
+                "peering_name": "",
+                "private_endpoint": "10.206.0.6",
+                "private_endpoint_subnetwork": "",
+                "public_endpoint": "34.174.220.70"
+              }
+            ],
+            "private_ipv6_google_access": "",
+            "project": "amazing-autumn-398923",
+            "release_channel": [
+              {
+                "channel": "REGULAR"
+              }
+            ],
+            "remove_default_node_pool": true,
+            "resource_labels": {},
+            "resource_usage_export_config": [],
+            "security_posture_config": [
+              {
+                "mode": "BASIC",
+                "vulnerability_mode": "VULNERABILITY_MODE_UNSPECIFIED"
+              }
+            ],
+            "self_link": "https://container.googleapis.com/v1/projects/amazing-autumn-398923/locations/us-south1/clusters/cluster-2",
+            "service_external_ips_config": [
+              {
+                "enabled": false
+              }
+            ],
+            "services_ipv4_cidr": "10.120.0.0/20",
+            "subnetwork": "projects/amazing-autumn-398923/regions/us-south1/subnetworks/default",
+            "timeouts": null,
+            "tpu_ipv4_cidr_block": "",
+            "vertical_pod_autoscaling": [],
+            "workload_identity_config": [
+              {
+                "workload_pool": "amazing-autumn-398923.svc.id.goog"
+              }
+            ]
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoyNDAwMDAwMDAwMDAwLCJkZWxldGUiOjI0MDAwMDAwMDAwMDAsInJlYWQiOjI0MDAwMDAwMDAwMDAsInVwZGF0ZSI6MzYwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMiJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "google_container_node_pool",
+      "name": "main_node_pool",
+      "provider": "provider[\"registry.terraform.io/hashicorp/google\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "autoscaling": [],
+            "cluster": "https://container.googleapis.com/v1/projects/amazing-autumn-398923/locations/us-south1/clusters/cluster-2",
+            "id": "projects/amazing-autumn-398923/locations/us-south1/clusters/cluster-2/nodePools/main-node-pool",
+            "initial_node_count": 1,
+            "instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-b/instanceGroupManagers/gke-cluster-2-main-node-pool-bca7dcbd-grp",
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-a/instanceGroupManagers/gke-cluster-2-main-node-pool-d0824590-grp",
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-c/instanceGroupManagers/gke-cluster-2-main-node-pool-8a3b25c4-grp"
+            ],
+            "location": "us-south1",
+            "managed_instance_group_urls": [
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-b/instanceGroups/gke-cluster-2-main-node-pool-bca7dcbd-grp",
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-a/instanceGroups/gke-cluster-2-main-node-pool-d0824590-grp",
+              "https://www.googleapis.com/compute/v1/projects/amazing-autumn-398923/zones/us-south1-c/instanceGroups/gke-cluster-2-main-node-pool-8a3b25c4-grp"
+            ],
+            "management": [
+              {
+                "auto_repair": true,
+                "auto_upgrade": true
+              }
+            ],
+            "max_pods_per_node": 110,
+            "name": "main-node-pool",
+            "name_prefix": "",
+            "network_config": [
+              {
+                "create_pod_range": false,
+                "enable_private_nodes": false,
+                "pod_cidr_overprovision_config": [],
+                "pod_ipv4_cidr_block": "10.116.0.0/14",
+                "pod_range": "gke-cluster-2-pods-e74ef490"
+              }
+            ],
+            "node_config": [
+              {
+                "advanced_machine_features": [],
+                "boot_disk_kms_key": "",
+                "confidential_nodes": [],
+                "disk_size_gb": 150,
+                "disk_type": "pd-balanced",
+                "effective_taints": [],
+                "ephemeral_storage_local_ssd_config": [],
+                "fast_socket": [],
+                "gcfs_config": [],
+                "guest_accelerator": [],
+                "gvnic": [],
+                "host_maintenance_policy": [],
+                "image_type": "COS_CONTAINERD",
+                "kubelet_config": [],
+                "labels": {},
+                "linux_node_config": [],
+                "local_nvme_ssd_block_config": [],
+                "local_ssd_count": 0,
+                "logging_variant": "DEFAULT",
+                "machine_type": "e2-standard-4",
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "min_cpu_platform": "",
+                "node_group": "",
+                "oauth_scopes": [
+                  "https://www.googleapis.com/auth/devstorage.read_only",
+                  "https://www.googleapis.com/auth/logging.write",
+                  "https://www.googleapis.com/auth/monitoring",
+                  "https://www.googleapis.com/auth/service.management.readonly",
+                  "https://www.googleapis.com/auth/servicecontrol",
+                  "https://www.googleapis.com/auth/trace.append"
+                ],
+                "preemptible": false,
+                "reservation_affinity": [],
+                "resource_labels": {},
+                "service_account": "default",
+                "shielded_instance_config": [
+                  {
+                    "enable_integrity_monitoring": true,
+                    "enable_secure_boot": false
+                  }
+                ],
+                "sole_tenant_config": [],
+                "spot": false,
+                "tags": [],
+                "taint": [],
+                "workload_metadata_config": [
+                  {
+                    "mode": "GKE_METADATA"
+                  }
+                ]
+              }
+            ],
+            "node_count": 1,
+            "node_locations": [
+              "us-south1-a",
+              "us-south1-b",
+              "us-south1-c"
+            ],
+            "operation": null,
+            "placement_policy": [],
+            "project": "amazing-autumn-398923",
+            "timeouts": null,
+            "upgrade_settings": [
+              {
+                "blue_green_settings": [],
+                "max_surge": 1,
+                "max_unavailable": 0,
+                "strategy": "SURGE"
+              }
+            ],
+            "version": "1.27.3-gke.100"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxODAwMDAwMDAwMDAwLCJkZWxldGUiOjE4MDAwMDAwMDAwMDAsInVwZGF0ZSI6MTgwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMSJ9",
+          "dependencies": [
+            "google_container_cluster.main_gke_cluster"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "deploy_services",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "358923674325641666",
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "google_container_cluster.main_gke_cluster",
+            "google_container_node_pool.main_node_pool"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "null_resource",
+      "name": "next",
+      "provider": "provider[\"registry.terraform.io/hashicorp/null\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "6467710258141616336",
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "google_container_cluster.main_gke_cluster",
+            "google_container_node_pool.main_node_pool",
+            "null_resource.deploy_services",
+            "time_sleep.wait_30_seconds"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "time_sleep",
+      "name": "wait_30_seconds",
+      "provider": "provider[\"registry.terraform.io/hashicorp/time\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "create_duration": "30s",
+            "destroy_duration": null,
+            "id": "2023-10-31T07:16:08Z",
+            "triggers": null
+          },
+          "sensitive_attributes": [],
+          "dependencies": [
+            "google_container_cluster.main_gke_cluster",
+            "google_container_node_pool.main_node_pool",
+            "null_resource.deploy_services"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}

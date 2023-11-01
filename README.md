@@ -1,10 +1,17 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/QezgUHsp)
 
 ### Screenshots
+
+##### Q1 application
 ![Q1 application](./Q1/screenshot_of_deployed_application.png)
+
+##### Q1 output of terraform apply
 ![Q1 output of terraform apply](./Q1/screenshot_of_output_after_terraform_apply.png)
 
+##### Q2 output of terraform apply
 ![Q2 output of terraform apply](./Q2/screenshot_of_terraform_apply_and_ip_address.png)
+
+##### Q2 docker --version
 ![Q2 docker --version](./Q2/screenshot_of_docker__version.png)
 
 ### Q1 Important Debugging steps:
